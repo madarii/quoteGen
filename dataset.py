@@ -1,3 +1,4 @@
+import torch
 from torch.utils.data import Dataset
 import numpy as np
 
@@ -38,7 +39,7 @@ class QuoteDataset(Dataset):
 
         return {"input": input_quote, "target": target_quote}
 
-    def one_hot(self, sample, n_char):
+    def one_hot(self, sample, n_chars):
         encoding = np.zeros((len(sample["input"]), n_chars))
         input_quote = sample["input"]
         for i, e in enumerate(input_quote):
