@@ -7,7 +7,8 @@ Given quote database has 38k quotes on which this model is trained.
 
 "You should know logic is more safer".  
 "Human beings have believed in private services" (don't know what that means. xD)  
-"George W. Bush is one who believe out people"  
+"George W. Bush is one who believe our people"  
+"Don't worry about the future"   
 
 ## Sample a quote
 ```sh
