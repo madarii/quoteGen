@@ -36,6 +36,7 @@ for epoch in range(1, EPOCHS + 1):
         input, target = input.to(device), target.to(device)
         output, hidden = model(input, hidden)
         loss = criterion(output.squeeze(), target.squeeze())
+        loss.backward()
         avg_loss += loss.item() / input.size()[1]
         optimizer.step()
 
